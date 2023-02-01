@@ -11,9 +11,18 @@
     <meta name="keywords" lang="fr" content="ISIMA, site, web, html, css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <?php
+        if(!strcmp(basename($_SERVER['PHP_SELF']), "index.php")){
+        $chemin = "./";
+        }
+        else {
+        $chemin = "../";
+        }
+    ?>
+
     <!-- Apparence du site (css et icone) -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
-    <link rel="shortcut icon" type="image/png" href="./img/ico/icone.png"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo($chemin);?>css/style.css" media="all">
+    <link rel="shortcut icon" type="image/png" href="<?php echo($chemin);?>img/ico/icone.png"/>
 </head>
 
 <body>
@@ -23,8 +32,8 @@
     <header>
         <!-- Titre -->
         <div class="titre">
-            <h1><a href="./index.php">TITRE</a></h1>
-            <img src="./img/logo.png" alt="Logo du site">
+            <h1><a href="<?php echo($chemin);?>index.php">TITRE</a></h1>
+            <img src="<?php echo($chemin);?>img/logo.png" alt="Logo du site">
         </div>
 
         <!-- Authentification et lien d'inscription (form) -->
@@ -41,7 +50,7 @@
                 </div>
                 <div>
                     <input type="submit" value="Se connecter">
-                    <span> Pas de compte ? <a href="./inscription.php">Inscris-toi !</a></span>
+                    <span> Pas de compte ? <a href="<?php echo($chemin);?>inscription.php">Inscris-toi !</a></span>
                 </div>
             </form>
         </div>
