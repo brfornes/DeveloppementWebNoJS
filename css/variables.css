@@ -1,0 +1,9 @@
+:root {
+    --partie-gauche: 70%;
+    --partie-droite: 30%;
+    --hauteur-header: 100px;
+
+    --main-color: #c0d4e7;
+    --auth-color: #4494cb;
+    --cart-color: #d8d8d8;
+}

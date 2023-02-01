@@ -1,0 +1,106 @@
+@import url("reset.css");
+@import url("variables.css");
+
+@media screen and (max-width: 900px){
+  
+    /* MOBILE  */
+}
+
+/* ==================== [ PAGE ] ==================== */
+
+body {
+    background-color: #333;
+}
+
+.page {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* =================== [ HEADER ] =================== */
+
+header {
+    background-color: var(--main-color);
+    height: var(--hauteur-header); /* c un 50 en fét tkt */
+    display: flex;
+    flex-direction: row;
+}
+
+.titre {
+    width: var(--partie-gauche);
+}
+
+.auth {
+    background-color: var(--auth-color);
+    width: var(--partie-droite);
+}
+
+/* ==================== [ BODY ] ==================== */
+
+section {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    width: var(--partie-gauche);
+    height: 500px;
+}
+
+.cart {
+    background: linear-gradient(white, var(--cart-color));
+    width: var(--partie-droite);
+    height: 500px;
+}
+
+@media screen and (max-width: 900px){
+  
+    header {
+        flex-direction: column;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .titre {
+        width: 100%;
+    }
+
+    .auth {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .cart {
+        width: 100%;
+    }
+}
+
+/* ================== [ GENERALITES ] ================= */
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 10px 0 4px 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 20px 0 4px 20px;
+}
+
+/* ===================== [ FORM ] ==================== */
+
+.form_inscription {
+    border: thick double var(--auth-color);
+    margin: 10px;
+    padding: 10px;
+}
