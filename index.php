@@ -1,9 +1,11 @@
-<?php include("header.php"); ?>
+<?php include("./structure/header.php"); ?>
 
     <nav>
         <h2>CONTENU</h2>
     </nav>
 
-    <p>Exercice 6 : <a href="exercice6.php">Exo nuancier</a></p>
+    <p>Exercice 6 : <a href="./pages/exercice6.php">Exo nuancier</a></p>
 
-<?php include("footer.php"); ?>
+    
+
+<?php include("./structure/footer.php"); ?>
