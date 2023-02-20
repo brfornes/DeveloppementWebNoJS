@@ -39,6 +39,7 @@ header {
     height: var(--hauteur-header); /* c un 50 en fét tkt */
     display: flex;
     flex-direction: row;
+    margin: 20px 0 40px 0;
 }
 
 .titre {
@@ -71,14 +72,41 @@ header {
 
 .champs_form {
     background-color: var(--auth-color);
+    padding: 4px;
     display: flex;
     flex-direction: column;
+    direction: rtl;
 }
 
 .champs_form div {
     display: flex;
     flex-direction: column;
 }
+
+.champs_form div input {
+    width: 70%;
+    margin: 4px 0;
+}
+
+.boutons_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 4px;
+}
+
+/*
+.champs_form {
+    background-color: var(--auth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.champs_form div {
+    display: flex;
+    flex-direction: column;
+}*/
 
 @media screen and (max-width: 900px){
   
