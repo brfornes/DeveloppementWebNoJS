@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("../structure/header.php"); ?>
 
     <h2>Enregistrement d'un utilisateur</h2>
     <form action="enregistre_utilisateur.php" method="post" class="form_inscription">
@@ -24,4 +24,4 @@
     </form>
 
 
-<?php include("footer.php"); ?>
+<?php include("../structure/footer.php"); ?>

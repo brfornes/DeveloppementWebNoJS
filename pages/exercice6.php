@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("../structure/header.php"); ?>
 
     <h2>Exercice 6</h2>
 
@@ -22,4 +22,4 @@
     
     ?>
 
-<?php include("footer.php"); ?>
+<?php include("../structure/footer.php"); ?>

@@ -32,25 +32,28 @@
     <header>
         <!-- Titre -->
         <div class="titre">
-            <h1><a href="<?php echo($chemin);?>index.php">TITRE</a></h1>
-            <img src="<?php echo($chemin);?>img/logo.png" alt="Logo du site">
+            <div>
+                <img src="<?php echo($chemin);?>img/site/icone-site.gif" alt="Logo du site">
+                <h1><a href="<?php echo($chemin);?>index.php">JEUX VIDÉOS</a></h1>
+            </div>
         </div>
 
         <!-- Authentification et lien d'inscription (form) -->
         <div class="auth">
-            <h2>AUTHENTIFICATION</h2>
-            <form action="" method="post" class="">
-                <div>
-                    <label for="email">Adresse mail</label>
-                    <input type="text" name="email" id="email" autocomplete="on" placeholder="truc@blabla.fr">
+            <form action="<?php echo($chemin);?>pages/inscription.php" method="post" class="">
+                <div class="champs_form">
+                    <div>
+                        <label for="email">Adresse mail</label>
+                        <input type="text" name="email" id="email" autocomplete="on" placeholder="truc@blabla.fr">
+                    </div>
+                    <div>
+                        <label for="mdp">Mot de Passe</label>
+                        <input type="password" name="mdp" id="mdp" autocomplete="on" placeholder="coucou">
+                    </div>
                 </div>
                 <div>
-                    <label for="mdp">Mot de Passe</label>
-                    <input type="password" name="mdp" id="mdp" autocomplete="on" placeholder="coucou">
-                </div>
-                <div>
-                    <input type="submit" value="Se connecter">
-                    <span> Pas de compte ? <a href="<?php echo($chemin);?>inscription.php">Inscris-toi !</a></span>
+                    <button class="bouton" type="submit">Se connecter</button>
+                    <button class="bouton">S'inscrire</button>
                 </div>
             </form>
         </div>

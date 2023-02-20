@@ -1,6 +1,14 @@
 @import url("reset.css");
 @import url("variables.css");
 @import url("boutons.css");
+@import url("fonts.css");
+@import url("boutons.css");
+
+a {
+    text-decoration: none;
+    color: black;
+}
+  
 
 @media screen and (max-width: 900px){
   
@@ -16,30 +24,72 @@ body {
 .page {
     margin: auto;
     max-width: 1200px;
+    background-image: url("../img/site/fond-wide-1200px.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10px;
 }
 
 /* =================== [ HEADER ] =================== */
 
 header {
-    background-color: var(--main-color);
     height: var(--hauteur-header); /* c un 50 en fét tkt */
     display: flex;
     flex-direction: row;
 }
 
 .titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: var(--partie-gauche);
 }
 
+.titre div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: var(--partie-gauche);
+}
+
+.titre div h1 a {
+    font-family: "Zorque", sans-serif;
+}
+
+.titre div img {
+    max-height: var(--hauteur-header);
+    margin-right: 0.5em;
+}
+
 .auth {
-    background-color: var(--auth-color);
     width: var(--partie-droite);
+}
+
+.champs_form {
+    background-color: var(--auth-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.champs_form div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px){
+  
+    .auth {
+        margin-top: 20px;
+    }
 }
 
 /* ==================== [ BODY ] ==================== */
 
 section {
-    background-color: var(--main-color);
     display: flex;
     flex-direction: row;
 }
@@ -50,7 +100,7 @@ article {
 }
 
 .cart {
-    background: linear-gradient(white, var(--cart-color));
+    /*background: linear-gradient(white, var(--cart-color));*/
     width: var(--partie-droite);
     height: 500px;
 }
@@ -85,7 +135,8 @@ article {
 /* ================== [ GENERALITES ] ================= */
 
 h1 {
-    font-size: 1.6em;
+    font-size: 2.2em;
+    color: black;
 }
 
 h2 {
