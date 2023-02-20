@@ -14,8 +14,7 @@
         {
         // on affiche les informations de l'enregistrement en cours ici faire du html pour l'affichage
 
-        echo $data['libelle'].' '.$data['prenom'].' ('.$data['statut'].')';
-        echo ' <i>date de naissance : '.$data['date'].'</i><br>';
+            echo $data['libelle'];
         }
         // 4. on ferme la connexion à MariaDB
         mysqli_close($db);

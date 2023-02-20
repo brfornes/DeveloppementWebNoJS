@@ -1,11 +1,21 @@
-<?php include("./structure/header.php"); ?>
+<?php 
+    include("./structure/header.php");
+    require("./db/databaseManagement.php");
+?>
 
-    <nav>
-        <h2>CONTENU</h2>
-    </nav>
+    <h2>CONTENU</h2>
 
-    <p>Exercice 6 : <a href="./pages/exercice6.php">Exo nuancier</a></p>
+    <!--<div><?php afficher_categories();?> </div>-->
 
-    
+    <div class="catalogue">
+        <div>
+            <div class="div_image">
+                <img src="./img/categories/epees.gif" />
+            </div>
+            <div class="div_titre">
+                <h3>Jeux de Simulation</h3>
+            </div>
+        </div>
+    </div>
 
 <?php include("./structure/footer.php"); ?>
