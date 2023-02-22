@@ -39,6 +39,7 @@ header {
     height: var(--hauteur-header); /* c un 50 en fét tkt */
     display: flex;
     flex-direction: row;
+    margin: 20px 0 40px 0;
 }
 
 .titre {
@@ -70,9 +71,35 @@ header {
 }
 
 .champs_form {
-    background-color: var(--auth-color);
+    background-color: var(--bleu-ceruleum);
+    padding: 4px;
     display: flex;
     flex-direction: column;
+    direction: rtl;
+}
+
+.champs_form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.champs_form div input {
+    width: 70%;
+    margin: 4px 0;
+}
+
+.boutons_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 4px;
+}
+
+.champs_form {
+    background-color: var(--bleu-ceruleum);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .champs_form div {
@@ -149,10 +176,51 @@ h3 {
     margin: 20px 0 4px 20px;
 }
 
+/* ================== [ CATALOGUE ] ================= */
+
+.catalogue {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: auto;
+}
+
+.div_element_catalogue {
+    width: 200px;
+    height: 200px;
+}
+
+.div_image {
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: var(--bleu-ceruleum);
+}
+
+.div_image img {
+    padding: 25px;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div_titre {
+    font-family: "Zorque", sans-serif;
+    text-align: center;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.div_titre h3 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
 /* ===================== [ FORM ] ==================== */
 
 .form_inscription {
-    border: thick double var(--auth-color);
+    border: thick double var(--bleu-ceruleum);
     margin: 10px;
     padding: 10px;
 }

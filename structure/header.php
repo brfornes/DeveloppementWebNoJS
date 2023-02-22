@@ -44,16 +44,16 @@
                 <div class="champs_form">
                     <div>
                         <label for="email">Adresse mail</label>
-                        <input type="text" name="email" id="email" autocomplete="on" placeholder="truc@blabla.fr">
+                        <input type="text" name="email" id="email" autocomplete="on" placeholder="nomprenom@domain.fr" required>
                     </div>
                     <div>
                         <label for="mdp">Mot de Passe</label>
-                        <input type="password" name="mdp" id="mdp" autocomplete="on" placeholder="coucou">
+                        <input type="password" name="mdp" id="mdp" placeholder="motdepasse" required>
                     </div>
                 </div>
-                <div>
-                    <button class="bouton" type="submit">Se connecter</button>
+                <div class="boutons_form">
                     <button class="bouton">S'inscrire</button>
+                    <button class="bouton" type="submit">Se connecter</button>
                 </div>
             </form>
         </div>
