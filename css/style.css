@@ -127,7 +127,7 @@ article {
 }
 
 .cart {
-    /*background: linear-gradient(white, var(--cart-color));*/
+    background: linear-gradient(white, var(--cart-color));
     width: var(--partie-droite);
     height: 500px;
 }
@@ -179,10 +179,12 @@ h3 {
 /* ================== [ CATALOGUE ] ================= */
 
 .catalogue {
-    float: left;
+    /*float: left;*/
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     overflow-y: auto;
 }
 
@@ -216,6 +218,53 @@ h3 {
     margin: 0;
     font-size: 1.4em;
 }
+
+
+/* ================= [ LISTE JEUX ] ================= */
+
+.div_element_jeu {
+    display: flex;
+    margin-bottom: 20px;
+    width: 45%;
+    height: 140px;
+    background: linear-gradient(white, var(--cart-color));
+    border-radius: 50% 0% 0% 50%;
+}
+
+.div_jeu_image {
+    width: 30%;
+    padding: 5% 0 5% 10px;
+    margin-right: 5%;
+    display: flex;
+}
+
+.div_jeu_text {
+    padding: 5% 0;
+}
+
+.div_jeu_image img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.div_jeu_text h3 {
+    font-family: "Zorque", sans-serif;
+    size: 1em;
+    margin-left: 0;
+}
+
+p .details {
+    color: var(--bleu-ceruleum);
+    size: 1.6em;
+    margin-bottom: 10px;
+}
+
+p .prix {
+    color: var(--bleu-ceruleum);
+    font-family: "Zorque", sans-serif;
+}
+
 
 /* ===================== [ FORM ] ==================== */
 
