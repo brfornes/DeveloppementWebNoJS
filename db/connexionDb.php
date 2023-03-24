@@ -21,7 +21,7 @@ function connec_db($sql){
     return $results_array;
 }
 
-function ajout_db($sql){
+function ajout_suppression_db($sql){
     // 1. on se connecte à MariaDB
     $db = mysqli_connect('localhost', 'jeux-videos', 'IsImA2021_/%', 'jeux-videos', 3307) //jeux-videos, IsImA2021_/%
     or die('Erreur SQL : '. mysqli_error($db));

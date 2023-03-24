@@ -109,6 +109,10 @@
 
 
     function ajout_article_bd_panier($id,$prix){
-        ajout_db("INSERT INTO panier_article values(1,$id,1,0,0,$prix)");
+        ajout_suppression_db("INSERT INTO panier_article values(1,$id,1,0,0,$prix)");
+    }
+
+    function flush_panier(){
+        ajout_suppression_db("DELETE FROM panier_article WHERE panier_article.id_panier = 1");
     }
 ?>
