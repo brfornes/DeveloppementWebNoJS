@@ -1,0 +1,5 @@
+#--------------#
+#  Error page  #
+#--------------#
+
+ErrorDocument 404 /pages/erreur.php

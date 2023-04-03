@@ -10,7 +10,7 @@ a {
 }
   
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
   
     /* MOBILE  */
 }
@@ -59,11 +59,22 @@ header {
 
 .titre div h1 a {
     font-family: "Zorque", sans-serif;
+    font-size: 40px;
 }
 
 .titre div img {
     max-height: var(--hauteur-header);
     margin-right: 0.5em;
+}
+
+@media screen and (max-width: 750px){
+    .titre div h1 a {
+        font-size: 60px;
+    }
+
+    .titre div img {
+        max-width: 100px;
+    }
 }
 
 .auth {
@@ -107,7 +118,7 @@ header {
     flex-direction: column;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
   
     .auth {
         margin-top: 20px;
@@ -132,20 +143,38 @@ article {
 
     justify-content: center;
     align-items: center;
+
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.titre_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+hr {
+    margin: 1em;
 }
 
 .cart img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
-.cart h2 {
-    border-bottom:1px solid black;
-    padding-bottom: 5px;
+.panier {
+    padding: 10px;
+}
+
+li {
+    list-style: square inside;
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
 
     .page {
         display: flex;
@@ -170,14 +199,13 @@ article {
     }
 
     article {
-        display: block;
         width: 100%;
-        padding-top: 120px;
+        padding-top: 140px;
     }
 
     .cart {
+        width: 98%;
         margin-top: 5px;
-        width: 100%;
     }
 }
 
@@ -287,6 +315,15 @@ p .details {
 p .prix {
     color: var(--bleu-ceruleum);
     font-family: "Zorque", sans-serif;
+}
+
+@media screen and (max-width: 750px){
+    .catalogue {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
 
 

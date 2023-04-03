@@ -1,3 +1,3 @@
-<form>
-  <input type="button" value="< Retour" onclick="history.back()" class="bouton">
-</form>
+<button class="bouton"><a href="../index.php">Retour</a></button>
+
+<!--history.back()-->

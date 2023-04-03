@@ -99,7 +99,7 @@
             $prix = $row['prix_ttc'];
             $prix_total = $quantite*$prix;
             
-            echo($libelle." ".$quantite." x ".$prix." = ".$prix_total);
+            echo("<li>".$libelle." ".$quantite." x ".$prix." = ".$prix_total."</li>");
 
 ?>
 
