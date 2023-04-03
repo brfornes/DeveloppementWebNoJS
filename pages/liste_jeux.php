@@ -5,10 +5,10 @@
     $id_famille = $_GET['categorie'];
 ?>
 
-    <h2>CATEGORIE</h2>
+    <?php include("../pages/goback.php"); ?>
 
     <div class="catalogue">
-        <div><?php afficher_jeux_categorie($id_famille);?></div>
+        <?php afficher_jeux_categorie($id_famille);?>
     </div>
 
 
